@@ -3,8 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Test</title>
   </head>
-  <script type="module" src="./js/dateAndTimeAndPromises.js"></script>
+  <button type="button" class="js-calc">Calc</button>
+
+  <div class="calc-container hidden">
+    <form class="calc">
+      <input class="calc-display" type="text" name="display" />
+      <button class="calc-button" type="button" name="reset" data-id="clear">C / AC</button>
+      <button class="calc-button" type="button" name="negative" data-id="negative">&plusmn;</button>
+      <button class="calc-button" type="button" name="sqrt" data-id="sqrt">&radic;</button>
+      <button class="calc-button" type="button" name="divide" value="/" data-id="maths">/</button>
+      <button class="calc-button" type="button" name="seven" data-id="digit">7</button>
+      <button class="calc-button" type="button" name="eigth" data-id="digit">8</button>
+      <button class="calc-button" type="button" name="nine" data-id="digit">9</button>
+      <button class="calc-button" type="button" name="multiply" value="*" data-id="maths">⁎</button>
+      <button class="calc-button" type="button" name="four" data-id="digit">4</button>
+      <button class="calc-button" type="button" name="five" data-id="digit">5</button>
+      <button class="calc-button" type="button" name="six" data-id="digit">6</button>
+      <button class="calc-button" type="button" name="minus" value="-" data-id="maths">-</button>
+      <button class="calc-button" type="button" name="one" data-id="digit">1</button>
+      <button class="calc-button" type="button" name="two" data-id="digit">2</button>
+      <button class="calc-button" type="button" name="three" data-id="digit">3</button>
+      <button class="calc-button" type="button" name="plus" value="+" data-id="maths">+</button>
+      <button class="calc-button" type="button" name="zero" data-id="digit">0</button>
+      <button class="calc-button" type="button" name="dot" data-id="point">,</button>
+      <button class="calc-button" type="button" name="equal" data-id="compute">=</button>
+    </form>
+  </div>
+  <script type="module" src="./js/calc.js"></script>
   <body></body>
 </html>
